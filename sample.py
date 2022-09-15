@@ -3,7 +3,7 @@ from time import sleep
 import sys 
 
 # This is a list of banned names
-# Not yer finished
+# Not yet finished
 
 banlist = ["Goat", "Cow", "Horse", "Cat", "Dog", "Bird", "Pig", "Fish"]
 
@@ -42,7 +42,11 @@ def printer(version):
         
             
 # Now just call it
+<<<<<<< HEAD
 printer("Dog")
 
 # Now then create another compliment
 #def compliment():
+=======
+printer()
+>>>>>>> 6c6425c38042633b6acfd326ba2e7f3a466eb1e7

@@ -7,7 +7,7 @@ import sys
 
 banlist = ["Goat", "Cow", "Horse", "Cat", "Dog", "Bird", "Pig", "Fish"]
 
-def printer():
+def printer(version):
     while True:
         try:
             take = input("Enter your name: ")
@@ -27,7 +27,7 @@ def printer():
                         print("That's a cool name")
                         for i in take:
                             print("<3")
-                    end = 'Finishing.... '
+                    end = 'Finishing process .... '
                     for x in end:
                         sys.stdout.write(x)
                         sys.stdout.flush()
@@ -42,4 +42,7 @@ def printer():
         
             
 # Now just call it
-printer()
+printer("Dog")
+
+# Now then create another compliment
+#def compliment():

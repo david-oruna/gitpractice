@@ -3,7 +3,7 @@ from time import sleep
 import sys 
 
 # This is a list of banned names
-# Not yer finished
+# Not yet finished
 
 banlist = ["Goat", "Cow", "Horse", "Cat", "Dog", "Bird", "Pig", "Fish"]
 

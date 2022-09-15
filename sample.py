@@ -1,33 +1,45 @@
-# Let's code tetris
+# Let's do some oop dummy program
+from time import sleep
+import sys 
 
-# Let's make a <3 printer
+# This is a list of banned names
+# Not yer finished
 
+banlist = ["Goat", "Cow", "Horse", "Cat", "Dog", "Bird", "Pig", "Fish"]
 
-
-banlist = ["Goat", "Cow", "Horse", "Cat", "Dog", "Bird", "Pig"]
-
-def fun():
+def printer():
     while True:
         try:
             take = input("Enter your name: ")
-            if take.isalpha():
+            
+            if take.lower() in banlist:
+                print("Not animals allowed")
                 
-                if take.lower() == "donkey":
-                    print("XD")
-                elif take.lower() == "human":
-                    print("Hey are u an alien? 👽")
-                else:
-                    print("That's a cool name")
-                    for i in take:
-                        print("<3")
-                print('Finishing .. . . ')                  
-                break
+                continue
             else:
-                print("Only letters!")
-                continue   
+                if take.isalpha():
+                    
+                    if take.lower() == "donkey":
+                        print("XD")
+                    elif take.lower() == "human":
+                        print("Hey are u an alien? 👽")
+                    else:
+                        print("That's a cool name")
+                        for i in take:
+                            print("<3")
+                    end = 'Finishing.... '
+                    for x in end:
+                        sys.stdout.write(x)
+                        sys.stdout.flush()
+                        sleep(0.2)                  
+                    break
+                else:
+                    print("Only letters!")
+                    continue   
         except ValueError as e:
             print(f"Value error {e}")
 
         
             
-fun()
+# Now just call it
+printer()

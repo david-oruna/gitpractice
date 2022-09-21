@@ -49,6 +49,16 @@ section header ul li
 section header ul li a
 {
     color: #111;
-    text-decoration: none
-    ;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+section header ul li button
+{
+    background-color: #4584ef;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: #fff;
+
 }

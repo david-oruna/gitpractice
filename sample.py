@@ -7,7 +7,7 @@ import sys
 
 banlist = ["Goat", "Cow", "Horse", "Cat", "Dog", "Bird", "Pig", "Fish"]
 
-def printer(version):
+def printer():
     while True:
         try:
             take = input("Enter your name: ")
@@ -20,7 +20,8 @@ def printer(version):
                 if take.isalpha():
                     
                     if take.lower() == "donkey":
-                        print("XD")
+                        print("sure XD")
+                        continue
                     elif take.lower() == "human":
                         print("Hey are u an alien? 👽")
                     else:
@@ -40,3 +41,4 @@ def printer(version):
             print(f"Value error {e}")
 
         
+printer()

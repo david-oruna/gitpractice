@@ -40,13 +40,3 @@ def printer(version):
             print(f"Value error {e}")
 
         
-            
-# Now just call it
-<<<<<<< HEAD
-printer("Dog")
-
-# Now then create another compliment
-#def compliment():
-=======
-printer()
->>>>>>> 6c6425c38042633b6acfd326ba2e7f3a466eb1e7
